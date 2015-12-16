@@ -1,7 +1,11 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 body {
     font-size: 16px;
 	line-height: 1.6;
@@ -26,6 +30,13 @@ a {
 .main-footer {
 	padding: 2em 0;
 	background: #d9e4ea;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.wrapper {
+    min-height: calc(100vh - 89px);
 }
 
 /* ---- Page Elements ---- */
